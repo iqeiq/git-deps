@@ -709,7 +709,7 @@ def cli(options, args):
         if len(revs) > 1:
             options.multi = True
 
-        stop = self.options.stop
+        stop = options.stop
 
         for rev in revs:
             try:
