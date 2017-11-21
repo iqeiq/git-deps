@@ -664,8 +664,7 @@ def parse_args():
                         '[%(default)s]')
     parser.add_argument('-d', '--debug', dest='debug', action='store_true',
                         help='Show debugging')
-    parser.add_argument('-f', '--stop', dest='stop', action='store_true',
-                        help='stop')
+    parser.add_argument('-f', '--stop', dest='stop', type=str)
 
     options, args = parser.parse_known_args()
 
