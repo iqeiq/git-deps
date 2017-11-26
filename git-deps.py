@@ -713,8 +713,7 @@ def cli(options, args):
         for rev in revs:
             try:
                 detector.find_dependencies(rev)
-                if stop[:8] == rev[:8]:
-                    print("stop!!!!")
+                if stop[:7] == rev[:7]:
                     break
             except KeyboardInterrupt:
                 pass
